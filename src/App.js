@@ -6,6 +6,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LandingPage from "./components/UI/routeComponents/LandingPage";
 // import UserList from "./components/learn/CustomTable/UserList";
 import Footer from "./components/UI/Footer";
+import CustomSoftware from "./components/UI/routeComponents/CustomSoftware";
+import AppDevelopment from "./components/UI/routeComponents/AppDevelopment";
+import WebsiteDevelopment from "./components/UI/routeComponents/WebsiteDevelopment";
+
 function App() {
   return (
     <div>
@@ -37,17 +41,17 @@ function App() {
             <Route
               exact
               path="/web-app-development"
-              component={() => <div>web development</div>}
+              component={() => <WebsiteDevelopment />}
             />
             <Route
               exact
               path="/mobile-app-development"
-              component={() => <div>app development</div>}
+              component={() => <AppDevelopment />}
             />
             <Route
               exact
               path="/native-app-development"
-              component={() => <div>native app development</div>}
+              component={() => <CustomSoftware />}
             />
             <Route
               exact
