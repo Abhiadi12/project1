@@ -9,6 +9,8 @@ import Footer from "./components/UI/Footer";
 import CustomSoftware from "./components/UI/routeComponents/CustomSoftware";
 import AppDevelopment from "./components/UI/routeComponents/AppDevelopment";
 import WebsiteDevelopment from "./components/UI/routeComponents/WebsiteDevelopment";
+import Revolution from "./components/UI/routeComponents/Revolution";
+import AboutPage from "./components/UI/routeComponents/AboutPage";
 
 function App() {
   return (
@@ -23,16 +25,8 @@ function App() {
               path="/services"
               component={() => <div>service page</div>}
             />
-            <Route
-              exact
-              path="/revolution"
-              component={() => <div>Revolution page</div>}
-            />
-            <Route
-              exact
-              path="/about"
-              component={() => <div>why with us</div>}
-            />
+            <Route exact path="/revolution" component={() => <Revolution />} />
+            <Route exact path="/about" component={() => <AboutPage />} />
             <Route
               exact
               path="/contactUs"
