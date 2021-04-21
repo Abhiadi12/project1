@@ -11,6 +11,7 @@ import AppDevelopment from "./components/UI/routeComponents/AppDevelopment";
 import WebsiteDevelopment from "./components/UI/routeComponents/WebsiteDevelopment";
 import Revolution from "./components/UI/routeComponents/Revolution";
 import AboutPage from "./components/UI/routeComponents/AboutPage";
+import ContactUs from "./components/UI/routeComponents/ContactUs";
 
 function App() {
   return (
@@ -27,11 +28,7 @@ function App() {
             />
             <Route exact path="/revolution" component={() => <Revolution />} />
             <Route exact path="/about" component={() => <AboutPage />} />
-            <Route
-              exact
-              path="/contactUs"
-              component={() => <div>contact us</div>}
-            />
+            <Route exact path="/contactUs" component={() => <ContactUs />} />
             <Route
               exact
               path="/web-app-development"

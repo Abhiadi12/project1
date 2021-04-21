@@ -1,6 +1,8 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 const arcGrey = "#868686";
 const arcGreen = "#1C8D73";
+const arcBlue = "#1769aa";
+
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -15,6 +17,7 @@ const theme = createMuiTheme({
       // dark: will be calculated from palette.secondary.main,
     },
     arcOrange: "#ff8f00",
+    arcBlue: arcBlue,
     // Used by `getContrastText()` to maximize the contrast between
     // the background and the text.
     contrastThreshold: 3,
@@ -58,6 +61,32 @@ const theme = createMuiTheme({
     subtitle2: {
       color: arcGrey,
       fontSize: "0.75rem",
+    },
+  },
+  // overrides component style , anytime that component renders it uses this styles
+  overrides: {
+    MuiInputLabel: {
+      root: {
+        color: arcBlue,
+        fontSize: "1rem",
+      },
+    },
+    MuiInput: {
+      root: {
+        color: arcGrey,
+        fontWeight: 300,
+      },
+      underline: {
+        "&:before": {
+          borderBottom: `2px solid ${arcBlue}`,
+        },
+        "&:hover:not($disabled):not($focused):not($error):before": {
+          borderBottom: `2px solid ${arcBlue}`,
+        },
+        "&:after": {
+          borderBottom: `2px solid ${arcBlue}`,
+        },
+      },
     },
   },
 });
