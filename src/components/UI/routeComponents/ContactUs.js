@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
@@ -119,6 +120,8 @@ function ContactUs() {
               variant="contained"
               className={classes.buttonStyle}
               color="primary"
+              component={Link}
+              to="/estimate"
             >
               Free Estimate
             </Button>

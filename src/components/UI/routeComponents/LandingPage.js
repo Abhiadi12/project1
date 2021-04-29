@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -148,6 +149,8 @@ function LandingPage() {
                 variant="contained"
                 color="primary"
                 className={classes.button}
+                component={Link}
+                to="/estimate"
               >
                 Estimate
               </Button>
@@ -320,6 +323,8 @@ function LandingPage() {
           <Button
             variant="contained"
             color="primary"
+            component={Link}
+            to="/estimate"
             className={classes.button}
           >
             Free Estimate

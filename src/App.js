@@ -12,6 +12,7 @@ import WebsiteDevelopment from "./components/UI/routeComponents/WebsiteDevelopme
 import Revolution from "./components/UI/routeComponents/Revolution";
 import AboutPage from "./components/UI/routeComponents/AboutPage";
 import ContactUs from "./components/UI/routeComponents/ContactUs";
+import Estimate from "./components/UI/routeComponents/Estimate";
 
 function App() {
   return (
@@ -44,11 +45,7 @@ function App() {
               path="/native-app-development"
               component={() => <CustomSoftware />}
             />
-            <Route
-              exact
-              path="/estimate"
-              component={() => <div>Free estimate</div>}
-            />
+            <Route exact path="/estimate" component={() => <Estimate />} />
           </Switch>
           <Footer />
         </Router>

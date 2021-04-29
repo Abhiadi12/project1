@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
   extendAccessImg: {
     height: "auto",
     maxWidth: "500px",
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down("sm")]: {
       maxWidth: "400px",
     },
   },

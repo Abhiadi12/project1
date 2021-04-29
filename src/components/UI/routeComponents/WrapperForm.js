@@ -96,13 +96,6 @@ function WrapperForm({
     setOpen(false);
   };
 
-  // const { reset: resetName, error: nameError, ...bindName } = useInput("");
-  // const { reset: resetEmail, error: emailError, ...bindEmail } = useInput("");
-  // const { reset: resetPhone, error: phoneError, ...bindPhone } = useInput("");
-  // const { reset: resetMessage, error: messageError, ...bindMessage } = useInput(
-  //   ""
-  // );
-
   return (
     <div>
       <Grid item style={{ marginBottom: "0.5em" }}>

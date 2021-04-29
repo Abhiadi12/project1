@@ -50,6 +50,9 @@ const useStyles = makeStyles((theme) => ({
       width: "400px",
       height: "300px",
     },
+    "@media (max-width: 400px)": {
+      width: "250px",
+    },
   },
 }));
 function AboutPage() {
